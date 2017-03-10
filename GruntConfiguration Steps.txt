@@ -1,0 +1,252 @@
+1) install Grunt command-line interface (CLI)
+	npm install -g grunt-cli
+
+2) Next, create the package.json file in the conFusion folder with the following content:
+	{
+	  "name": "conFusion",
+	  "private": true,
+	  "devDependencies": {},
+	  
+	  "engines": {
+	    "node": ">=0.10.0"
+	  }
+	}
+
+3) install Grunt to use within your project
+ 	npm install grunt --save-dev
+
+4) Creating a Grunt File
+
+   Create a file named Gruntfile.js in the conFusion folder and add below code
+
+   'use strict';
+
+	module.exports = function (grunt) {
+	  // Define the configuration for all the tasks
+	  grunt.initConfig({
+
+	  });
+	};
+5) Configure Project code 
+	Enclose css and js import to build comment with respective file names
+	For Css
+	<!-- build:css styles/main.css --> 
+	<!-- endbuild -->
+
+	For Js
+	<!-- build:js styles/main.js --> 
+	<!-- endbuild -->
+
+6) Install JSHint task.This is used to check Javascript errors and report in command prompt
+	i.The first one installs the Grunt module for JSHint
+	ii.The second one adds further to print out the messages from JSHint in a better format. 
+	iii. The time-grunt module generates time statistics about how much time each task consumes.
+	iv. jit-grunt enables us to include the necessary downloaded Grunt modules when needed for the tasks.
+
+	npm install grunt-contrib-jshint --save-dev
+	npm install jshint-stylish --save-dev
+	npm install time-grunt --save-dev
+	npm install jit-grunt --save-dev
+
+7) Configure the JSHint task in the Gruntfile as follows.
+	
+	// Time how long tasks take. Can help when optimizing build times
+	require('time-grunt')(grunt);
+
+	// Automatically load required Grunt tasks
+	require('jit-grunt')(grunt);
+
+	// Define the configuration for all the tasks
+	grunt.initConfig({
+	  pkg: grunt.file.readJSON('package.json'),
+
+	  // Make sure code styles are up to par and there are no obvious mistakes
+	  jshint: {
+	    options: {
+	      jshintrc: '.jshintrc',
+	      reporter: require('jshint-stylish')
+	    },
+	    
+	    all: {
+	      src: [
+	        'Gruntfile.js',
+	        'app/scripts/{,*/}*.js'
+	      ]
+	    }
+	  }
+	});
+
+	grunt.registerTask('build', [
+	  'jshint'
+	]);
+
+	grunt.registerTask('default',['build']);
+
+8)Create a file named .jshintrc (Don't forget the . in front of jshintrc) in the conFusion folder and add below code in that file.
+	{
+	  "bitwise": true,
+	  "browser": true,
+	  "curly": true,
+	  "eqeqeq": true,
+	  "esnext": true,
+	  "latedef": true,
+	  "noarg": true,
+	  "node": true,
+	  "strict": true,
+	  "undef": true,
+	  "unused": true,
+	  "globals": {
+	    "angular": false
+	  }
+	}
+
+9) Copying the Files and Cleaning Up the Dist Folder
+	Next you will install the Grunt modules to copy over files to a distribution folder named dist, and clean up the dist folder when needed. To do this, install the following Grunt modules:
+
+	npm install grunt-contrib-copy --save-dev
+	npm install grunt-contrib-clean --save-dev
+
+10) Copy below code in Gruntfile.js inside initConfig
+
+	copy: {
+	  dist: {
+	    cwd: 'app',
+	    src: [ '**','!styles/**/*.css','!scripts/**/*.js' ],
+	    dest: 'dist',
+	    expand: true
+	  },
+	  
+	  fonts: {
+	    files: [
+	      {
+	        //for bootstrap fonts
+	        expand: true,
+	        dot: true,
+	        cwd: 'bower_components/bootstrap/dist',
+	        src: ['fonts/*.*'],
+	        dest: 'dist'
+	      }, {
+	        //for font-awesome
+	        expand: true,
+	        dot: true,
+	        cwd: 'bower_components/font-awesome',
+	        src: ['fonts/*.*'],
+	        dest: 'dist'
+	      }
+	    ]
+	  }
+	},
+
+	clean: {
+	  build: {
+	    src: [ 'dist/']
+	  }
+	}
+
+11) Update the Grunt build task in the file as follows
+
+	grunt.registerTask('build', [
+	  'clean',
+	  'jshint',
+	  'copy'
+	]);
+
+12) Now run grunt.It will create dist folder under confusion folder with fonts,images,scripts,html files.
+
+Preparing the Distribution Folder and Files 
+
+13)We are now going to use the Grunt usemin module together with concat, cssmin, uglify and filerev to prepare the distribution folder. To do this, install the following Grunt modules:
+
+ npm install grunt-contrib-concat --save-dev
+ npm install grunt-contrib-cssmin --save-dev
+ npm install grunt-contrib-uglify --save-dev
+ npm install grunt-filerev --save-dev
+ npm install grunt-usemin --save-dev
+
+ 14) Next, update the task configuration within the Gruntfile.js with the following additional code to introduce the new tasks:
+	**** Note ***-Copy below code before copy :{} config
+
+ 	useminPrepare: {
+        html: 'app/menu.htm},
+
+	useminPrepare: {
+	  html: 'app/menu.html',
+	  options: {
+	    dest: 'dist'
+	  }
+	},
+
+	// Concat
+	concat: {
+	  options: {
+	    separator: ';'
+	  },
+	  
+	  // dist configuration is provided by useminPrepare
+	  dist: {}
+	},
+
+	// Uglify
+	uglify: {
+	  // dist configuration is provided by useminPrepare
+	  dist: {}
+	},
+
+	cssmin: {
+	  dist: {}
+	},
+
+	// Filerev
+	filerev: {
+	  options: {
+	    encoding: 'utf8',
+	    algorithm: 'md5',
+	    length: 20
+	  },
+	  
+	  release: {
+	    // filerev:release hashes(md5) all assets (images, js and css )
+	    // in dist directory
+	    files: [{
+	      src: [
+	        'dist/scripts/*.js',
+	        'dist/styles/*.css',
+	      ]
+	    }]
+	  }
+	},
+	  
+	// Usemin
+	// Replaces all assets with their revved version in html and css files.
+	// options.assetDirs contains the directories for finding the assets
+	// according to their relative paths
+	usemin: {
+	  html: ['dist/*.html'],
+	  css: ['dist/styles/*.css'],
+	  options: {
+	    assetsDirs: ['dist', 'dist/styles']
+	  }
+	},
+
+15) Update the jit-grunt configuration as follows, to inform it that useminPrepare task depends on the usemin package:
+
+	require('jit-grunt')(grunt, {
+	  useminPrepare: 'grunt-usemin'
+	});
+
+16) Update the Grunt build task as follows:
+
+	grunt.registerTask('build', [
+	  'clean',
+	  'jshint',
+	  'useminPrepare',
+	  'concat',
+	  'cssmin',
+	  'uglify',
+	  'copy',
+	  'filerev',
+	  'usemin'
+	]);
+
+17) Run Grunt, it will create a dist folder with the files structured correctly to be distributed to a server to host your website.
+ 
