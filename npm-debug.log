@@ -1,0 +1,786 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jshint',
+1 verbose cli   'gulp-jshint',
+1 verbose cli   'jshint-stylish',
+1 verbose cli   'gulp-imagemin',
+1 verbose cli   'gulp-concat',
+1 verbose cli   'gulp-uglify',
+1 verbose cli   'gulp-minify-css',
+1 verbose cli   'gulp-usemin',
+1 verbose cli   'gulp-cache',
+1 verbose cli   'gulp-changed',
+1 verbose cli   'gulp-rev',
+1 verbose cli   'gulp-rename',
+1 verbose cli   'gulp-notify',
+1 verbose cli   'browser-sync',
+1 verbose cli   'gulp-ng-annotate',
+1 verbose cli   'del',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'jshint', null ]
+6 verbose cache add name=undefined spec="jshint" args=["jshint",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'jshint',
+7 verbose parsed url   path: 'jshint',
+7 verbose parsed url   href: 'jshint' }
+8 verbose cache add [ 'gulp-jshint', null ]
+9 verbose cache add name=undefined spec="gulp-jshint" args=["gulp-jshint",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gulp-jshint',
+10 verbose parsed url   path: 'gulp-jshint',
+10 verbose parsed url   href: 'gulp-jshint' }
+11 verbose cache add [ 'jshint-stylish', null ]
+12 verbose cache add name=undefined spec="jshint-stylish" args=["jshint-stylish",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'jshint-stylish',
+13 verbose parsed url   path: 'jshint-stylish',
+13 verbose parsed url   href: 'jshint-stylish' }
+14 verbose cache add [ 'gulp-imagemin', null ]
+15 verbose cache add name=undefined spec="gulp-imagemin" args=["gulp-imagemin",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'gulp-imagemin',
+16 verbose parsed url   path: 'gulp-imagemin',
+16 verbose parsed url   href: 'gulp-imagemin' }
+17 verbose cache add [ 'gulp-concat', null ]
+18 verbose cache add name=undefined spec="gulp-concat" args=["gulp-concat",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'gulp-concat',
+19 verbose parsed url   path: 'gulp-concat',
+19 verbose parsed url   href: 'gulp-concat' }
+20 verbose cache add [ 'gulp-uglify', null ]
+21 verbose cache add name=undefined spec="gulp-uglify" args=["gulp-uglify",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'gulp-uglify',
+22 verbose parsed url   path: 'gulp-uglify',
+22 verbose parsed url   href: 'gulp-uglify' }
+23 verbose cache add [ 'gulp-minify-css', null ]
+24 verbose cache add name=undefined spec="gulp-minify-css" args=["gulp-minify-css",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'gulp-minify-css',
+25 verbose parsed url   path: 'gulp-minify-css',
+25 verbose parsed url   href: 'gulp-minify-css' }
+26 verbose cache add [ 'gulp-usemin', null ]
+27 verbose cache add name=undefined spec="gulp-usemin" args=["gulp-usemin",null]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: 'gulp-usemin',
+28 verbose parsed url   path: 'gulp-usemin',
+28 verbose parsed url   href: 'gulp-usemin' }
+29 verbose cache add [ 'gulp-cache', null ]
+30 verbose cache add name=undefined spec="gulp-cache" args=["gulp-cache",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'gulp-cache',
+31 verbose parsed url   path: 'gulp-cache',
+31 verbose parsed url   href: 'gulp-cache' }
+32 verbose cache add [ 'gulp-changed', null ]
+33 verbose cache add name=undefined spec="gulp-changed" args=["gulp-changed",null]
+34 verbose parsed url { protocol: null,
+34 verbose parsed url   slashes: null,
+34 verbose parsed url   auth: null,
+34 verbose parsed url   host: null,
+34 verbose parsed url   port: null,
+34 verbose parsed url   hostname: null,
+34 verbose parsed url   hash: null,
+34 verbose parsed url   search: null,
+34 verbose parsed url   query: null,
+34 verbose parsed url   pathname: 'gulp-changed',
+34 verbose parsed url   path: 'gulp-changed',
+34 verbose parsed url   href: 'gulp-changed' }
+35 verbose cache add [ 'gulp-rev', null ]
+36 verbose cache add name=undefined spec="gulp-rev" args=["gulp-rev",null]
+37 verbose parsed url { protocol: null,
+37 verbose parsed url   slashes: null,
+37 verbose parsed url   auth: null,
+37 verbose parsed url   host: null,
+37 verbose parsed url   port: null,
+37 verbose parsed url   hostname: null,
+37 verbose parsed url   hash: null,
+37 verbose parsed url   search: null,
+37 verbose parsed url   query: null,
+37 verbose parsed url   pathname: 'gulp-rev',
+37 verbose parsed url   path: 'gulp-rev',
+37 verbose parsed url   href: 'gulp-rev' }
+38 verbose cache add [ 'gulp-rename', null ]
+39 verbose cache add name=undefined spec="gulp-rename" args=["gulp-rename",null]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: 'gulp-rename',
+40 verbose parsed url   path: 'gulp-rename',
+40 verbose parsed url   href: 'gulp-rename' }
+41 verbose cache add [ 'gulp-notify', null ]
+42 verbose cache add name=undefined spec="gulp-notify" args=["gulp-notify",null]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: 'gulp-notify',
+43 verbose parsed url   path: 'gulp-notify',
+43 verbose parsed url   href: 'gulp-notify' }
+44 verbose cache add [ 'browser-sync', null ]
+45 verbose cache add name=undefined spec="browser-sync" args=["browser-sync",null]
+46 verbose parsed url { protocol: null,
+46 verbose parsed url   slashes: null,
+46 verbose parsed url   auth: null,
+46 verbose parsed url   host: null,
+46 verbose parsed url   port: null,
+46 verbose parsed url   hostname: null,
+46 verbose parsed url   hash: null,
+46 verbose parsed url   search: null,
+46 verbose parsed url   query: null,
+46 verbose parsed url   pathname: 'browser-sync',
+46 verbose parsed url   path: 'browser-sync',
+46 verbose parsed url   href: 'browser-sync' }
+47 verbose cache add [ 'gulp-ng-annotate', null ]
+48 verbose cache add name=undefined spec="gulp-ng-annotate" args=["gulp-ng-annotate",null]
+49 verbose parsed url { protocol: null,
+49 verbose parsed url   slashes: null,
+49 verbose parsed url   auth: null,
+49 verbose parsed url   host: null,
+49 verbose parsed url   port: null,
+49 verbose parsed url   hostname: null,
+49 verbose parsed url   hash: null,
+49 verbose parsed url   search: null,
+49 verbose parsed url   query: null,
+49 verbose parsed url   pathname: 'gulp-ng-annotate',
+49 verbose parsed url   path: 'gulp-ng-annotate',
+49 verbose parsed url   href: 'gulp-ng-annotate' }
+50 verbose cache add [ 'del', null ]
+51 verbose cache add name=undefined spec="del" args=["del",null]
+52 verbose parsed url { protocol: null,
+52 verbose parsed url   slashes: null,
+52 verbose parsed url   auth: null,
+52 verbose parsed url   host: null,
+52 verbose parsed url   port: null,
+52 verbose parsed url   hostname: null,
+52 verbose parsed url   hash: null,
+52 verbose parsed url   search: null,
+52 verbose parsed url   query: null,
+52 verbose parsed url   pathname: 'del',
+52 verbose parsed url   path: 'del',
+52 verbose parsed url   href: 'del' }
+53 silly lockFile da5c03cb-jshint jshint
+54 verbose lock jshint /Users/AshishTripathi/.npm/da5c03cb-jshint.lock
+55 silly lockFile aeb19f3d-gulp-jshint gulp-jshint
+56 verbose lock gulp-jshint /Users/AshishTripathi/.npm/aeb19f3d-gulp-jshint.lock
+57 silly lockFile 22813634-jshint-stylish jshint-stylish
+58 verbose lock jshint-stylish /Users/AshishTripathi/.npm/22813634-jshint-stylish.lock
+59 silly lockFile fa224668-gulp-imagemin gulp-imagemin
+60 verbose lock gulp-imagemin /Users/AshishTripathi/.npm/fa224668-gulp-imagemin.lock
+61 silly lockFile a9575072-gulp-concat gulp-concat
+62 verbose lock gulp-concat /Users/AshishTripathi/.npm/a9575072-gulp-concat.lock
+63 silly lockFile 15fab96b-gulp-uglify gulp-uglify
+64 verbose lock gulp-uglify /Users/AshishTripathi/.npm/15fab96b-gulp-uglify.lock
+65 silly lockFile 6bf44555-gulp-minify-css gulp-minify-css
+66 verbose lock gulp-minify-css /Users/AshishTripathi/.npm/6bf44555-gulp-minify-css.lock
+67 silly lockFile 592e3d50-gulp-usemin gulp-usemin
+68 verbose lock gulp-usemin /Users/AshishTripathi/.npm/592e3d50-gulp-usemin.lock
+69 silly lockFile 8fd6f6e3-gulp-cache gulp-cache
+70 verbose lock gulp-cache /Users/AshishTripathi/.npm/8fd6f6e3-gulp-cache.lock
+71 silly lockFile 28684dd2-gulp-changed gulp-changed
+72 verbose lock gulp-changed /Users/AshishTripathi/.npm/28684dd2-gulp-changed.lock
+73 silly lockFile f59920ec-gulp-rev gulp-rev
+74 verbose lock gulp-rev /Users/AshishTripathi/.npm/f59920ec-gulp-rev.lock
+75 silly lockFile 8ff38cb7-gulp-rename gulp-rename
+76 verbose lock gulp-rename /Users/AshishTripathi/.npm/8ff38cb7-gulp-rename.lock
+77 silly lockFile 6a726d29-gulp-notify gulp-notify
+78 verbose lock gulp-notify /Users/AshishTripathi/.npm/6a726d29-gulp-notify.lock
+79 silly lockFile 6d7be3df-browser-sync browser-sync
+80 verbose lock browser-sync /Users/AshishTripathi/.npm/6d7be3df-browser-sync.lock
+81 silly lockFile 3e9d1dfd-gulp-ng-annotate gulp-ng-annotate
+82 verbose lock gulp-ng-annotate /Users/AshishTripathi/.npm/3e9d1dfd-gulp-ng-annotate.lock
+83 silly lockFile fea453f8-del del
+84 verbose lock del /Users/AshishTripathi/.npm/fea453f8-del.lock
+85 silly lockFile aeb19f3d-gulp-jshint gulp-jshint
+86 silly lockFile aeb19f3d-gulp-jshint gulp-jshint
+87 silly lockFile da5c03cb-jshint jshint
+88 silly lockFile da5c03cb-jshint jshint
+89 silly lockFile 22813634-jshint-stylish jshint-stylish
+90 silly lockFile 22813634-jshint-stylish jshint-stylish
+91 silly lockFile fa224668-gulp-imagemin gulp-imagemin
+92 silly lockFile fa224668-gulp-imagemin gulp-imagemin
+93 silly lockFile 15fab96b-gulp-uglify gulp-uglify
+94 silly lockFile 15fab96b-gulp-uglify gulp-uglify
+95 silly lockFile a9575072-gulp-concat gulp-concat
+96 silly lockFile a9575072-gulp-concat gulp-concat
+97 silly lockFile 6bf44555-gulp-minify-css gulp-minify-css
+98 silly lockFile 6bf44555-gulp-minify-css gulp-minify-css
+99 silly lockFile 592e3d50-gulp-usemin gulp-usemin
+100 silly lockFile 592e3d50-gulp-usemin gulp-usemin
+101 silly lockFile 28684dd2-gulp-changed gulp-changed
+102 silly lockFile 28684dd2-gulp-changed gulp-changed
+103 silly lockFile 8fd6f6e3-gulp-cache gulp-cache
+104 silly lockFile 8fd6f6e3-gulp-cache gulp-cache
+105 silly lockFile 6d7be3df-browser-sync browser-sync
+106 silly lockFile 6d7be3df-browser-sync browser-sync
+107 silly lockFile f59920ec-gulp-rev gulp-rev
+108 silly lockFile f59920ec-gulp-rev gulp-rev
+109 silly lockFile 8ff38cb7-gulp-rename gulp-rename
+110 silly lockFile 8ff38cb7-gulp-rename gulp-rename
+111 silly lockFile 6a726d29-gulp-notify gulp-notify
+112 silly lockFile 6a726d29-gulp-notify gulp-notify
+113 verbose addNamed [ 'gulp-jshint', '' ]
+114 verbose addNamed [ null, '*' ]
+115 silly lockFile 8b36bbde-gulp-jshint gulp-jshint@
+116 verbose lock gulp-jshint@ /Users/AshishTripathi/.npm/8b36bbde-gulp-jshint.lock
+117 verbose addNamed [ 'jshint', '' ]
+118 verbose addNamed [ null, '*' ]
+119 silly lockFile a02a2468-jshint jshint@
+120 verbose lock jshint@ /Users/AshishTripathi/.npm/a02a2468-jshint.lock
+121 verbose addNamed [ 'jshint-stylish', '' ]
+122 verbose addNamed [ null, '*' ]
+123 silly lockFile f26fdf17-jshint-stylish jshint-stylish@
+124 verbose lock jshint-stylish@ /Users/AshishTripathi/.npm/f26fdf17-jshint-stylish.lock
+125 silly lockFile 3e9d1dfd-gulp-ng-annotate gulp-ng-annotate
+126 silly lockFile 3e9d1dfd-gulp-ng-annotate gulp-ng-annotate
+127 verbose addNamed [ 'gulp-imagemin', '' ]
+128 verbose addNamed [ null, '*' ]
+129 silly lockFile 0ba22ca1-gulp-imagemin gulp-imagemin@
+130 verbose lock gulp-imagemin@ /Users/AshishTripathi/.npm/0ba22ca1-gulp-imagemin.lock
+131 verbose addNamed [ 'gulp-uglify', '' ]
+132 verbose addNamed [ null, '*' ]
+133 silly lockFile 044a9113-gulp-uglify gulp-uglify@
+134 verbose lock gulp-uglify@ /Users/AshishTripathi/.npm/044a9113-gulp-uglify.lock
+135 verbose addNamed [ 'gulp-concat', '' ]
+136 verbose addNamed [ null, '*' ]
+137 silly lockFile 190d832a-gulp-concat gulp-concat@
+138 verbose lock gulp-concat@ /Users/AshishTripathi/.npm/190d832a-gulp-concat.lock
+139 verbose addNamed [ 'gulp-minify-css', '' ]
+140 verbose addNamed [ null, '*' ]
+141 silly lockFile 37de6304-gulp-minify-css gulp-minify-css@
+142 verbose lock gulp-minify-css@ /Users/AshishTripathi/.npm/37de6304-gulp-minify-css.lock
+143 verbose addNamed [ 'gulp-usemin', '' ]
+144 verbose addNamed [ null, '*' ]
+145 silly lockFile 4b3fec5c-gulp-usemin gulp-usemin@
+146 verbose lock gulp-usemin@ /Users/AshishTripathi/.npm/4b3fec5c-gulp-usemin.lock
+147 verbose addNamed [ 'gulp-changed', '' ]
+148 verbose addNamed [ null, '*' ]
+149 silly lockFile d0e57b14-gulp-changed gulp-changed@
+150 verbose lock gulp-changed@ /Users/AshishTripathi/.npm/d0e57b14-gulp-changed.lock
+151 verbose addNamed [ 'gulp-cache', '' ]
+152 verbose addNamed [ null, '*' ]
+153 silly lockFile f4f5b265-gulp-cache gulp-cache@
+154 verbose lock gulp-cache@ /Users/AshishTripathi/.npm/f4f5b265-gulp-cache.lock
+155 verbose addNamed [ 'browser-sync', '' ]
+156 verbose addNamed [ null, '*' ]
+157 silly lockFile 6373e9ab-browser-sync browser-sync@
+158 verbose lock browser-sync@ /Users/AshishTripathi/.npm/6373e9ab-browser-sync.lock
+159 verbose addNamed [ 'gulp-rev', '' ]
+160 verbose addNamed [ null, '*' ]
+161 silly lockFile e9e7e24b-gulp-rev gulp-rev@
+162 verbose lock gulp-rev@ /Users/AshishTripathi/.npm/e9e7e24b-gulp-rev.lock
+163 verbose addNamed [ 'gulp-rename', '' ]
+164 verbose addNamed [ null, '*' ]
+165 silly lockFile 81aa0665-gulp-rename gulp-rename@
+166 verbose lock gulp-rename@ /Users/AshishTripathi/.npm/81aa0665-gulp-rename.lock
+167 silly lockFile fea453f8-del del
+168 silly lockFile fea453f8-del del
+169 verbose addNamed [ 'gulp-notify', '' ]
+170 verbose addNamed [ null, '*' ]
+171 silly lockFile 6b689132-gulp-notify gulp-notify@
+172 verbose lock gulp-notify@ /Users/AshishTripathi/.npm/6b689132-gulp-notify.lock
+173 verbose addNamed [ 'gulp-ng-annotate', '' ]
+174 verbose addNamed [ null, '*' ]
+175 silly lockFile a9c96953-gulp-ng-annotate gulp-ng-annotate@
+176 verbose lock gulp-ng-annotate@ /Users/AshishTripathi/.npm/a9c96953-gulp-ng-annotate.lock
+177 verbose addNamed [ 'del', '' ]
+178 verbose addNamed [ null, '*' ]
+179 silly lockFile 98150654-del del@
+180 verbose lock del@ /Users/AshishTripathi/.npm/98150654-del.lock
+181 silly addNameRange { name: 'gulp-jshint', range: '*', hasData: false }
+182 silly addNameRange { name: 'jshint', range: '*', hasData: false }
+183 silly addNameRange { name: 'jshint-stylish', range: '*', hasData: false }
+184 silly addNameRange { name: 'gulp-imagemin', range: '*', hasData: false }
+185 silly addNameRange { name: 'gulp-uglify', range: '*', hasData: false }
+186 silly addNameRange { name: 'gulp-concat', range: '*', hasData: false }
+187 silly addNameRange { name: 'gulp-minify-css', range: '*', hasData: false }
+188 silly addNameRange { name: 'gulp-usemin', range: '*', hasData: false }
+189 silly addNameRange { name: 'gulp-changed', range: '*', hasData: false }
+190 silly addNameRange { name: 'gulp-cache', range: '*', hasData: false }
+191 silly addNameRange { name: 'browser-sync', range: '*', hasData: false }
+192 silly addNameRange { name: 'gulp-rev', range: '*', hasData: false }
+193 silly addNameRange { name: 'gulp-rename', range: '*', hasData: false }
+194 silly addNameRange { name: 'gulp-notify', range: '*', hasData: false }
+195 verbose request where is /gulp-jshint
+196 verbose request registry https://registry.npmjs.org/
+197 verbose request id a17c908bfb67cf7f
+198 verbose url raw /gulp-jshint
+199 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-jshint' ]
+200 verbose url resolved https://registry.npmjs.org/gulp-jshint
+201 verbose request where is https://registry.npmjs.org/gulp-jshint
+202 info trying registry request attempt 1 at 16:01:10
+203 http GET https://registry.npmjs.org/gulp-jshint
+204 verbose request where is /gulp-imagemin
+205 verbose request registry https://registry.npmjs.org/
+206 verbose url raw /gulp-imagemin
+207 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-imagemin' ]
+208 verbose url resolved https://registry.npmjs.org/gulp-imagemin
+209 verbose request where is https://registry.npmjs.org/gulp-imagemin
+210 info trying registry request attempt 1 at 16:01:10
+211 http GET https://registry.npmjs.org/gulp-imagemin
+212 verbose request where is /gulp-concat
+213 verbose request registry https://registry.npmjs.org/
+214 verbose url raw /gulp-concat
+215 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-concat' ]
+216 verbose url resolved https://registry.npmjs.org/gulp-concat
+217 verbose request where is https://registry.npmjs.org/gulp-concat
+218 info trying registry request attempt 1 at 16:01:10
+219 http GET https://registry.npmjs.org/gulp-concat
+220 silly addNameRange { name: 'gulp-ng-annotate', range: '*', hasData: false }
+221 verbose request where is /gulp-minify-css
+222 verbose request registry https://registry.npmjs.org/
+223 verbose url raw /gulp-minify-css
+224 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-minify-css' ]
+225 verbose url resolved https://registry.npmjs.org/gulp-minify-css
+226 verbose request where is https://registry.npmjs.org/gulp-minify-css
+227 info trying registry request attempt 1 at 16:01:10
+228 http GET https://registry.npmjs.org/gulp-minify-css
+229 verbose request where is /gulp-usemin
+230 verbose request registry https://registry.npmjs.org/
+231 verbose url raw /gulp-usemin
+232 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-usemin' ]
+233 verbose url resolved https://registry.npmjs.org/gulp-usemin
+234 verbose request where is https://registry.npmjs.org/gulp-usemin
+235 info trying registry request attempt 1 at 16:01:10
+236 http GET https://registry.npmjs.org/gulp-usemin
+237 verbose request where is /gulp-changed
+238 verbose request registry https://registry.npmjs.org/
+239 verbose url raw /gulp-changed
+240 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-changed' ]
+241 verbose url resolved https://registry.npmjs.org/gulp-changed
+242 verbose request where is https://registry.npmjs.org/gulp-changed
+243 info trying registry request attempt 1 at 16:01:10
+244 http GET https://registry.npmjs.org/gulp-changed
+245 verbose request where is /gulp-cache
+246 verbose request registry https://registry.npmjs.org/
+247 verbose url raw /gulp-cache
+248 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-cache' ]
+249 verbose url resolved https://registry.npmjs.org/gulp-cache
+250 verbose request where is https://registry.npmjs.org/gulp-cache
+251 info trying registry request attempt 1 at 16:01:10
+252 http GET https://registry.npmjs.org/gulp-cache
+253 verbose request where is /gulp-uglify
+254 verbose request registry https://registry.npmjs.org/
+255 verbose url raw /gulp-uglify
+256 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglify' ]
+257 verbose url resolved https://registry.npmjs.org/gulp-uglify
+258 verbose request where is https://registry.npmjs.org/gulp-uglify
+259 info trying registry request attempt 1 at 16:01:10
+260 http GET https://registry.npmjs.org/gulp-uglify
+261 verbose request where is /browser-sync
+262 verbose request registry https://registry.npmjs.org/
+263 verbose url raw /browser-sync
+264 verbose url resolving [ 'https://registry.npmjs.org/', './browser-sync' ]
+265 verbose url resolved https://registry.npmjs.org/browser-sync
+266 verbose request where is https://registry.npmjs.org/browser-sync
+267 info trying registry request attempt 1 at 16:01:10
+268 http GET https://registry.npmjs.org/browser-sync
+269 verbose request where is /gulp-rename
+270 verbose request registry https://registry.npmjs.org/
+271 verbose url raw /gulp-rename
+272 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rename' ]
+273 verbose url resolved https://registry.npmjs.org/gulp-rename
+274 verbose request where is https://registry.npmjs.org/gulp-rename
+275 info trying registry request attempt 1 at 16:01:10
+276 http GET https://registry.npmjs.org/gulp-rename
+277 silly addNameRange { name: 'del', range: '*', hasData: false }
+278 verbose request where is /gulp-notify
+279 verbose request registry https://registry.npmjs.org/
+280 verbose url raw /gulp-notify
+281 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-notify' ]
+282 verbose url resolved https://registry.npmjs.org/gulp-notify
+283 verbose request where is https://registry.npmjs.org/gulp-notify
+284 info trying registry request attempt 1 at 16:01:10
+285 http GET https://registry.npmjs.org/gulp-notify
+286 verbose request where is /gulp-rev
+287 verbose request registry https://registry.npmjs.org/
+288 verbose url raw /gulp-rev
+289 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rev' ]
+290 verbose url resolved https://registry.npmjs.org/gulp-rev
+291 verbose request where is https://registry.npmjs.org/gulp-rev
+292 info trying registry request attempt 1 at 16:01:10
+293 http GET https://registry.npmjs.org/gulp-rev
+294 verbose request where is /gulp-ng-annotate
+295 verbose request registry https://registry.npmjs.org/
+296 verbose url raw /gulp-ng-annotate
+297 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-ng-annotate' ]
+298 verbose url resolved https://registry.npmjs.org/gulp-ng-annotate
+299 verbose request where is https://registry.npmjs.org/gulp-ng-annotate
+300 info trying registry request attempt 1 at 16:01:10
+301 http GET https://registry.npmjs.org/gulp-ng-annotate
+302 verbose request where is /del
+303 verbose request registry https://registry.npmjs.org/
+304 verbose url raw /del
+305 verbose url resolving [ 'https://registry.npmjs.org/', './del' ]
+306 verbose url resolved https://registry.npmjs.org/del
+307 verbose request where is https://registry.npmjs.org/del
+308 info trying registry request attempt 1 at 16:01:10
+309 http GET https://registry.npmjs.org/del
+310 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+311 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+312 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+313 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+314 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+315 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+316 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+317 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+318 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+319 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+320 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+321 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+322 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+323 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+324 verbose request where is /jshint-stylish
+325 verbose request registry https://registry.npmjs.org/
+326 verbose url raw /jshint-stylish
+327 verbose url resolving [ 'https://registry.npmjs.org/', './jshint-stylish' ]
+328 verbose url resolved https://registry.npmjs.org/jshint-stylish
+329 verbose request where is https://registry.npmjs.org/jshint-stylish
+330 info trying registry request attempt 1 at 16:01:10
+331 verbose etag W/"5880bb21-5ebf"
+332 http GET https://registry.npmjs.org/jshint-stylish
+333 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+334 verbose request where is /jshint
+335 verbose request registry https://registry.npmjs.org/
+336 verbose url raw /jshint
+337 verbose url resolving [ 'https://registry.npmjs.org/', './jshint' ]
+338 verbose url resolved https://registry.npmjs.org/jshint
+339 verbose request where is https://registry.npmjs.org/jshint
+340 info trying registry request attempt 1 at 16:01:10
+341 verbose etag W/"58c0de4e-1d6cd"
+342 http GET https://registry.npmjs.org/jshint
+343 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+344 info trying registry request attempt 2 at 16:01:20
+345 http GET https://registry.npmjs.org/gulp-concat
+346 info trying registry request attempt 2 at 16:01:20
+347 http GET https://registry.npmjs.org/gulp-imagemin
+348 info trying registry request attempt 2 at 16:01:20
+349 http GET https://registry.npmjs.org/gulp-jshint
+350 info trying registry request attempt 2 at 16:01:20
+351 http GET https://registry.npmjs.org/gulp-minify-css
+352 info trying registry request attempt 2 at 16:01:20
+353 http GET https://registry.npmjs.org/gulp-cache
+354 info trying registry request attempt 2 at 16:01:20
+355 http GET https://registry.npmjs.org/gulp-changed
+356 info trying registry request attempt 2 at 16:01:20
+357 http GET https://registry.npmjs.org/gulp-usemin
+358 info trying registry request attempt 2 at 16:01:20
+359 http GET https://registry.npmjs.org/gulp-uglify
+360 info trying registry request attempt 2 at 16:01:20
+361 http GET https://registry.npmjs.org/browser-sync
+362 info trying registry request attempt 2 at 16:01:20
+363 http GET https://registry.npmjs.org/gulp-rename
+364 info trying registry request attempt 2 at 16:01:20
+365 http GET https://registry.npmjs.org/gulp-notify
+366 info trying registry request attempt 2 at 16:01:20
+367 http GET https://registry.npmjs.org/gulp-rev
+368 info trying registry request attempt 2 at 16:01:20
+369 http GET https://registry.npmjs.org/gulp-ng-annotate
+370 info trying registry request attempt 2 at 16:01:20
+371 http GET https://registry.npmjs.org/del
+372 info trying registry request attempt 2 at 16:01:20
+373 verbose etag W/"5880bb21-5ebf"
+374 http GET https://registry.npmjs.org/jshint-stylish
+375 info trying registry request attempt 2 at 16:01:20
+376 verbose etag W/"58c0de4e-1d6cd"
+377 http GET https://registry.npmjs.org/jshint
+378 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+379 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+380 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+381 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+382 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+383 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+384 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+385 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+386 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+387 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+388 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+389 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+390 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+391 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+392 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+393 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED
+394 info trying registry request attempt 3 at 16:02:20
+395 http GET https://registry.npmjs.org/gulp-concat
+396 info trying registry request attempt 3 at 16:02:20
+397 http GET https://registry.npmjs.org/gulp-imagemin
+398 info trying registry request attempt 3 at 16:02:20
+399 http GET https://registry.npmjs.org/gulp-jshint
+400 info trying registry request attempt 3 at 16:02:20
+401 http GET https://registry.npmjs.org/gulp-minify-css
+402 info trying registry request attempt 3 at 16:02:20
+403 http GET https://registry.npmjs.org/gulp-cache
+404 info trying registry request attempt 3 at 16:02:20
+405 http GET https://registry.npmjs.org/gulp-changed
+406 info trying registry request attempt 3 at 16:02:20
+407 http GET https://registry.npmjs.org/gulp-usemin
+408 info trying registry request attempt 3 at 16:02:20
+409 http GET https://registry.npmjs.org/gulp-uglify
+410 info trying registry request attempt 3 at 16:02:20
+411 http GET https://registry.npmjs.org/browser-sync
+412 info trying registry request attempt 3 at 16:02:20
+413 http GET https://registry.npmjs.org/gulp-rename
+414 info trying registry request attempt 3 at 16:02:20
+415 http GET https://registry.npmjs.org/gulp-rev
+416 info trying registry request attempt 3 at 16:02:20
+417 http GET https://registry.npmjs.org/gulp-notify
+418 info trying registry request attempt 3 at 16:02:20
+419 http GET https://registry.npmjs.org/gulp-ng-annotate
+420 info trying registry request attempt 3 at 16:02:20
+421 http GET https://registry.npmjs.org/del
+422 info trying registry request attempt 3 at 16:02:20
+423 verbose etag W/"5880bb21-5ebf"
+424 http GET https://registry.npmjs.org/jshint-stylish
+425 info trying registry request attempt 3 at 16:02:20
+426 verbose etag W/"58c0de4e-1d6cd"
+427 http GET https://registry.npmjs.org/jshint
+428 silly lockFile 37de6304-gulp-minify-css gulp-minify-css@
+429 silly lockFile 37de6304-gulp-minify-css gulp-minify-css@
+430 silly lockFile 8b36bbde-gulp-jshint gulp-jshint@
+431 silly lockFile 8b36bbde-gulp-jshint gulp-jshint@
+432 silly lockFile 0ba22ca1-gulp-imagemin gulp-imagemin@
+433 silly lockFile 0ba22ca1-gulp-imagemin gulp-imagemin@
+434 silly lockFile 190d832a-gulp-concat gulp-concat@
+435 silly lockFile 190d832a-gulp-concat gulp-concat@
+436 silly lockFile 4b3fec5c-gulp-usemin gulp-usemin@
+437 silly lockFile 4b3fec5c-gulp-usemin gulp-usemin@
+438 silly lockFile 044a9113-gulp-uglify gulp-uglify@
+439 silly lockFile 044a9113-gulp-uglify gulp-uglify@
+440 silly lockFile d0e57b14-gulp-changed gulp-changed@
+441 silly lockFile d0e57b14-gulp-changed gulp-changed@
+442 silly lockFile f4f5b265-gulp-cache gulp-cache@
+443 silly lockFile f4f5b265-gulp-cache gulp-cache@
+444 silly lockFile 6373e9ab-browser-sync browser-sync@
+445 silly lockFile 6373e9ab-browser-sync browser-sync@
+446 silly lockFile 81aa0665-gulp-rename gulp-rename@
+447 silly lockFile 81aa0665-gulp-rename gulp-rename@
+448 silly lockFile e9e7e24b-gulp-rev gulp-rev@
+449 silly lockFile e9e7e24b-gulp-rev gulp-rev@
+450 silly lockFile 6b689132-gulp-notify gulp-notify@
+451 silly lockFile 6b689132-gulp-notify gulp-notify@
+452 silly lockFile a9c96953-gulp-ng-annotate gulp-ng-annotate@
+453 silly lockFile a9c96953-gulp-ng-annotate gulp-ng-annotate@
+454 silly lockFile 98150654-del del@
+455 silly lockFile 98150654-del del@
+456 silly registry.get cb [ 304, undefined ]
+457 verbose etag https://registry.npmjs.org/jshint-stylish from cache
+458 silly registry.get cb [ 304, undefined ]
+459 verbose etag https://registry.npmjs.org/jshint from cache
+460 silly addNameRange number 2 { name: 'jshint-stylish', range: '*', hasData: true }
+461 silly addNameRange versions [ 'jshint-stylish',
+461 silly addNameRange   [ '0.1.0',
+461 silly addNameRange     '0.1.1',
+461 silly addNameRange     '0.1.2',
+461 silly addNameRange     '0.1.3',
+461 silly addNameRange     '0.1.4',
+461 silly addNameRange     '0.1.5',
+461 silly addNameRange     '0.2.0',
+461 silly addNameRange     '0.3.0',
+461 silly addNameRange     '0.4.0',
+461 silly addNameRange     '1.0.0',
+461 silly addNameRange     '1.0.1',
+461 silly addNameRange     '1.0.2',
+461 silly addNameRange     '2.0.0',
+461 silly addNameRange     '2.0.1',
+461 silly addNameRange     '2.1.0',
+461 silly addNameRange     '2.2.0',
+461 silly addNameRange     '2.2.1' ] ]
+462 verbose addNamed [ 'jshint-stylish', '2.2.1' ]
+463 verbose addNamed [ '2.2.1', '2.2.1' ]
+464 silly lockFile 594459c7-jshint-stylish-2-2-1 jshint-stylish@2.2.1
+465 verbose lock jshint-stylish@2.2.1 /Users/AshishTripathi/.npm/594459c7-jshint-stylish-2-2-1.lock
+466 silly addNameRange number 2 { name: 'jshint', range: '*', hasData: true }
+467 silly addNameRange versions [ 'jshint',
+467 silly addNameRange   [ '0.1.8',
+467 silly addNameRange     '0.1.9',
+467 silly addNameRange     '0.2.0',
+467 silly addNameRange     '0.2.1',
+467 silly addNameRange     '0.2.2',
+467 silly addNameRange     '0.2.3',
+467 silly addNameRange     '0.3.0',
+467 silly addNameRange     '0.3.1',
+467 silly addNameRange     '0.4.0',
+467 silly addNameRange     '0.5.0',
+467 silly addNameRange     '0.5.1',
+467 silly addNameRange     '0.5.2',
+467 silly addNameRange     '0.5.3',
+467 silly addNameRange     '0.5.4',
+467 silly addNameRange     '0.5.5',
+467 silly addNameRange     '0.5.6',
+467 silly addNameRange     '0.5.7',
+467 silly addNameRange     '0.5.8',
+467 silly addNameRange     '0.5.9',
+467 silly addNameRange     '0.6.0',
+467 silly addNameRange     '0.6.1',
+467 silly addNameRange     '0.6.2',
+467 silly addNameRange     '0.6.3',
+467 silly addNameRange     '0.7.0',
+467 silly addNameRange     '0.7.1',
+467 silly addNameRange     '0.7.2',
+467 silly addNameRange     '0.7.3',
+467 silly addNameRange     '0.8.0',
+467 silly addNameRange     '0.8.1',
+467 silly addNameRange     '0.8.2',
+467 silly addNameRange     '0.9.0',
+467 silly addNameRange     '0.9.1',
+467 silly addNameRange     '1.0.0',
+467 silly addNameRange     '1.1.0',
+467 silly addNameRange     '2.0.0',
+467 silly addNameRange     '2.0.1',
+467 silly addNameRange     '2.1.0',
+467 silly addNameRange     '2.1.1',
+467 silly addNameRange     '2.1.2',
+467 silly addNameRange     '2.1.3',
+467 silly addNameRange     '2.1.4',
+467 silly addNameRange     '2.1.5',
+467 silly addNameRange     '2.1.6',
+467 silly addNameRange     '2.1.7',
+467 silly addNameRange     '2.1.8',
+467 silly addNameRange     '2.1.9',
+467 silly addNameRange     '2.1.10',
+467 silly addNameRange     '2.1.11',
+467 silly addNameRange     '2.2.0',
+467 silly addNameRange     '2.3.0',
+467 silly addNameRange     '2.4.0',
+467 silly addNameRange     '2.4.1',
+467 silly addNameRange     '2.4.2',
+467 silly addNameRange     '2.4.3',
+467 silly addNameRange     '2.4.4',
+467 silly addNameRange     '2.5.0',
+467 silly addNameRange     '2.5.1',
+467 silly addNameRange     '2.5.2',
+467 silly addNameRange     '2.5.3',
+467 silly addNameRange     '2.5.4',
+467 silly addNameRange     '2.5.5',
+467 silly addNameRange     '2.5.6',
+467 silly addNameRange     '2.5.7',
+467 silly addNameRange     '2.5.8',
+467 silly addNameRange     '2.5.9',
+467 silly addNameRange     '2.5.10',
+467 silly addNameRange     '2.5.11',
+467 silly addNameRange     '2.6.0',
+467 silly addNameRange     '2.6.1',
+467 silly addNameRange     '2.6.2',
+467 silly addNameRange     '2.6.3',
+467 silly addNameRange     '2.7.0',
+467 silly addNameRange     '2.8.0',
+467 silly addNameRange     '2.9.1-rc1',
+467 silly addNameRange     '2.9.1-rc2',
+467 silly addNameRange     '2.9.1-rc3',
+467 silly addNameRange     '2.9.1',
+467 silly addNameRange     '2.9.2',
+467 silly addNameRange     '2.9.3',
+467 silly addNameRange     '2.9.4' ] ]
+468 verbose addNamed [ 'jshint', '2.9.4' ]
+469 verbose addNamed [ '2.9.4', '2.9.4' ]
+470 silly lockFile e00ef640-jshint-2-9-4 jshint@2.9.4
+471 verbose lock jshint@2.9.4 /Users/AshishTripathi/.npm/e00ef640-jshint-2-9-4.lock
+472 silly lockFile 594459c7-jshint-stylish-2-2-1 jshint-stylish@2.2.1
+473 silly lockFile 594459c7-jshint-stylish-2-2-1 jshint-stylish@2.2.1
+474 silly lockFile f26fdf17-jshint-stylish jshint-stylish@
+475 silly lockFile f26fdf17-jshint-stylish jshint-stylish@
+476 silly lockFile e00ef640-jshint-2-9-4 jshint@2.9.4
+477 silly lockFile e00ef640-jshint-2-9-4 jshint@2.9.4
+478 silly lockFile a02a2468-jshint jshint@
+479 silly lockFile a02a2468-jshint jshint@
+480 error network tunneling socket could not be established, cause=connect ECONNREFUSED
+480 error network This is most likely not a problem with npm itself
+480 error network and is related to network connectivity.
+480 error network In most cases you are behind a proxy or have bad network settings.
+480 error network
+480 error network If you are behind a proxy, please make sure that the
+480 error network 'proxy' config is set properly.  See: 'npm help config'
+481 error System Darwin 14.5.0
+482 error command "node" "/usr/local/bin/npm" "install" "jshint" "gulp-jshint" "jshint-stylish" "gulp-imagemin" "gulp-concat" "gulp-uglify" "gulp-minify-css" "gulp-usemin" "gulp-cache" "gulp-changed" "gulp-rev" "gulp-rename" "gulp-notify" "browser-sync" "gulp-ng-annotate" "del" "--save-dev"
+483 error cwd /Applications/XAMPP/xamppfiles/htdocs/conFusion
+484 error node -v v0.10.36
+485 error npm -v 1.4.28
+486 error code ECONNRESET
+487 verbose exit [ 1, true ]
