@@ -70,6 +70,8 @@ angular.module('confusionApp')
 
         .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
 
+            $scope.orderTxt="";
+            
             var dish= menuFactory.getDish(parseInt($stateParams.id,10));
             
             $scope.dish = dish;
@@ -78,19 +80,19 @@ angular.module('confusionApp')
 
         .controller('DishCommentController', ['$scope', function($scope) {
             
-            $scope.mycomment = {rating:5, comment:"", author:"", date:""};
+            $scope.newComment={rating:5, comment:"", author:"", date:""};
+
+            $scope.submitComment=function(){
+
+                $scope.newComment.date=new Date();
+
+                $scope.dish.comments.push($scope.newComment);
+
+                $scope.newComment={rating:5, comment:"", author:"", date:""};
+
+                $scope.commentsForm.$setPristine();
+            };
             
-            $scope.submitComment = function () {
-                
-                $scope.mycomment.date = new Date().toISOString();
-                console.log($scope.mycomment);
-                
-                $scope.dish.comments.push($scope.mycomment);
-                
-                $scope.commentForm.$setPristine();
-                
-                $scope.mycomment = {rating:5, comment:"", author:"", date:""};
-            }
         }])
         .controller('IndexController', ['$scope','menuFactory','corporateFactory',function($scope,menuFactory,corporateFactory) {
             
